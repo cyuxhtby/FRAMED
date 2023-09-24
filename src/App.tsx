@@ -4,6 +4,7 @@ import { ethers } from "ethers";
 // import { useState } from "react";
 // import reactLogo from "./assets/react.svg";
 // import viteLogo from "/vite.svg";
+import Chat from "./components/Chat";
 import "./App.css";
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
   return (
     <main>
       <button onClick={connect}> Connect </button>
+      {<Chat players={[{ address: "0x2777C7735BCa78870978599ec0f98EAcBfc570A5" }]} />}
     </main>
   );
 }
